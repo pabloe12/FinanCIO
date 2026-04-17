@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanCIO - Productos</title>
+    <link href="/FinanCIO/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/FinanCIO/assets/css/styles.css" rel="stylesheet">
+    <style>
+        /* Estilos adicionales para la página de productos */
+        .app-screenshot {
+            background-color: #d0e3ff;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .app-screenshot-placeholder {
+            background-color: #7096d1;
+            border-radius: 10px;
+            padding: 60px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .social-preview {
+            background-color: #fff9f0;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #d0e3ff;
+        }
+
+        .social-preview h5 {
+            color: #081f5c;
+            margin-bottom: 15px;
+        }
+
+        .post-preview {
+            background-color: #f7f2eb;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #334eac;
+        }
+
+        .post-preview small {
+            color: #7096d1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v18.0"
+        nonce="FinanCIO"></script>
+    <!-- Navbar -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Sección 1: Productos -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Producto Estrella: FinanCIO App</h2>
+
+            <div class="producto-estrella">
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <h3 style="color: #081f5c;">FinanCIO</h3>
+                        <p class="lead">La aplicación definitiva para la gestión financiera de tu negocio.</p>
+                        <p>FinanCIO es una aplicación móvil y web diseñada específicamente para pequeñas empresas y
+                            emprendedores que buscan simplificar la gestión de sus finanzas. Con una interfaz intuitiva
+                            y potentes herramientas de análisis, FinanCIO te permite tener el control total de tus
+                            ingresos, gastos y proyecciones financieras.</p>
+
+                        <h4 class="mt-4" style="color: #081f5c;">Características Principales:</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">✓ Control de ingresos y gastos en tiempo real</li>
+                            <li class="mb-2">✓ Reportes automáticos y dashboards interactivos</li>
+                            <li class="mb-2">✓ Facturación electrónica integrada</li>
+                            <li class="mb-2">✓ Sincronización con cuentas bancarias</li>
+                            <li class="mb-2">✓ Alertas personalizadas de flujo de caja</li>
+                            <li class="mb-2">✓ Proyecciones financieras con IA</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="app-screenshot">
+                            <div class="app-screenshot-placeholder">
+                                <h4>📱 Vista previa de la App</h4>
+                                <p>Dashboard Principal</p>
+                                <div class="mt-3">
+                                    <span class="badge bg-primary me-2">Ingresos</span>
+                                    <span class="badge bg-success me-2">Gastos</span>
+                                    <span class="badge bg-info">Proyecciones</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-screenshot">
+                            <div class="app-screenshot-placeholder" style="background-color: #bad6eb;">
+                                <h4>📊 Reportes Financieros</h4>
+                                <p>Análisis detallados de tu negocio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Funciones destacadas -->
+                <div class="row mt-4">
+                    <div class="col-md-3 mb-3">
+                        <div class="feature-card">
+                            <div class="feature-icon">📈</div>
+                            <h5>Análisis en Tiempo Real</h5>
+                            <p class="small">Visualiza tus métricas clave actualizadas al instante</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="feature-card">
+                            <div class="feature-icon">🔄</div>
+                            <h5>Sincronización Automática</h5>
+                            <p class="small">Conecta con tus cuentas bancarias y sistemas contables</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="feature-card">
+                            <div class="feature-icon">🔔</div>
+                            <h5>Alertas Inteligentes</h5>
+                            <p class="small">Recibe notificaciones personalizadas sobre tu negocio</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="feature-card">
+                            <div class="feature-icon">🔒</div>
+                            <h5>Seguridad Avanzada</h5>
+                            <p class="small">Protección de datos con encriptación de nivel bancario</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: Redes Sociales Mejorada -->
+    <section id="contacto" class="py-5" style="background: linear-gradient(135deg, #eef5ff 0%, #d9e8f5 100%);">
+        <div class="container">
+            <h2 class="section-title text-center">Conéctate con FinanCIO</h2>
+            <p class="text-center mb-5">Síguenos en nuestras redes sociales y mantente al día con consejos financieros,
+                novedades y mucho más.</p>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Tarjeta de LinkedIn (Preparada para cuando tengas el enlace) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="card-body p-4">
+                            <div class="feature-icon mb-3" style="font-size: 3rem;">🔗</div>
+                            <h3 class="h4" style="color: #FF0000;">YouTube</h3>
+                            <p class="card-text text-muted">Contenido profesional, análisis de mercado, oportunidades
+                                laborales y artículos de liderazgo financiero.</p>
+                            <hr>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-1">📈 Análisis</span>
+                                <span class="badge bg-light text-dark me-1">💼 Networking</span>
+                                <span class="badge bg-light text-dark">🏆 Casos de éxito</span>
+                            </div>
+                            <!-- Enlace pendiente: cambia '#' por tu enlace de LinkedIn -->
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-100"
+                                style="background-color: #FF0000; border-color: #FF0000;"
+                                onmouseover="this.style.backgroundColor='transparent'; this.style.color='#FF0000';"
+                                onmouseout="this.style.backgroundColor='#FF0000'; this.style.color='white';">
+                                <i class="bi bi-linkedin me-2"></i> Visitar nuestra página →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de Facebook (CON TU ENLACE REAL) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="card-body p-4">
+                            <div class="feature-icon mb-3" style="font-size: 3rem;">📘</div>
+                            <h3 class="h4" style="color: #3B5998;">Facebook</h3>
+                            <p class="card-text text-muted">Sigue nuestra página para recibir tips financieros diarios,
+                                noticias de la empresa y contenido exclusivo.</p>
+                            <hr>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-1">📊 Tips diarios</span>
+                                <span class="badge bg-light text-dark me-1">🎁 Sorteos</span>
+                                <span class="badge bg-light text-dark">📢 Novedades</span>
+                            </div>
+                            <!-- Botón con enlace REAL de Facebook -->
+                            <a href="https://www.facebook.com/profile.php?id=61575421395790" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary w-100"
+                                style="border-color: #1877f2; background-color: #1877f2;"
+                                onmouseover="this.style.backgroundColor='transparent'; this.style.color='#1877f2';"
+                                onmouseout="this.style.backgroundColor='#1877f2'; this.style.color='white';">
+                                <i class="bi bi-facebook me-2"></i> Visitar nuestra página →
+                            </a>
+                            <!-- Opcional: Feed embebido de Facebook (comentado por defecto) -->
+                            <div class="mt-4">
+                                <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61575421395790"
+                                    data-tabs="timeline" data-width="" data-height="300" data-small-header="true"
+                                    data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                    <blockquote cite="https://www.facebook.com/profile.php?id=61575421395790"
+                                        class="fb-xfbml-parse-ignore">
+                                        <a href="https://www.facebook.com/profile.php?id=61575421395790">FinanCIO</a>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Instagram (Preparada para cuando tengas el enlace) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <div class="card-body p-4">
+                            <div class="feature-icon mb-3" style="font-size: 3rem;">📷</div>
+                            <h3 class="h3" style="color: #FD1D1D;">Instagram</h3>
+                            <p class="card-text text-muted">Contenido visual, historias de exito, dia a dia de la empresa y micro-tips
+                                financieros en formato fácil de digerir.</p>
+                            <hr>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-1">🎨 Infografías</span>
+                                <span class="badge bg-light text-dark me-1">📽️ Reels</span>
+                                <span class="badge bg-light text-dark">💡 Tips rápidos</span>
+                            </div>
+                            <!-- Enlace pendiente: cambia '#' por tu enlace de Instagram -->
+                            <a href="https://www.instagram.com/fina.nzas46/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary w-100" style="border-color: #FD1D1D; background-color: #FD1D1D;"
+                                onmouseover="this.style.backgroundColor='transparent'; this.style.color='#FD1D1D';"
+                                onmouseout="this.style.backgroundColor='#FD1D1D'; this.style.color='white';">
+                                <i class="bi bi-instagram me-2"></i> Visitar nuestra página →
+                            </a>
+                            <!-- Opcional: Feed embebido de Instagram (comentado por defecto) -->
+                            <div class="mt-4">
+                                <div class="fb-page" data-href="https://www.instagram.com/fina.nzas46/"
+                                    data-tabs="timeline" data-width="" data-height="300" data-small-header="true"
+                                    data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                    <blockquote cite="https://www.instagram.com/fina.nzas46/"
+                                        class="fb-xfbml-parse-ignore">
+                                        <a href="https://www.instagram.com/fina.nzas46/">FinanCIO</a>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mensaje adicional de comunidad -->
+            <div class="text-center mt-5 pt-3">
+                <div class="alert alert-light shadow-sm d-inline-block" role="alert"
+                    style="background-color: #081f5c10; border: none;">
+                    🌟 <strong>¡Sé parte de nuestra comunidad!</strong> 🌟 <br>
+                    Al seguirnos, recibirás contenido exclusivo y serás el primero en enterarte de nuevos lanzamientos.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="/FinanCIO/assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Cargar navbar y footer
+        fetch('/FinanCIO/components/nav-bar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando navbar:', error));
+
+        fetch('/FinanCIO/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando footer:', error));
+    </script>
+</body>
+
+</html>

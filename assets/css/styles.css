@@ -1,0 +1,241 @@
+/* Estilos personalizados para FinanCIO */
+body {
+    background-color: #f7f2eb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sección eslogan */
+.eslogan-section {
+    position: relative;
+    height: 70vh;
+    min-height: 300px;
+    background-image: url('/FinanCIO/media/img/FinanCIO_Edificio.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.eslogan-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(8, 30, 92, 0.481);
+}
+
+.eslogan-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+}
+
+.eslogan-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.eslogan-content p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Sección quienes somos */
+.quienes-card {
+    background-color: #fff9f0;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    border: 1px solid #d0e3ff;
+}
+
+.quienes-card:hover {
+    transform: translateY(-5px);
+}
+
+.quienes-card h3 {
+    color: #081f5c;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.quienes-card p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Video container */
+.video-container {
+    background-color: #bad6eb;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+/* Sección servicios */
+.servicio-card {
+    background-color: #fff9f0;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid #d0e3ff;
+}
+
+.servicio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.servicio-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.servicio-card h4 {
+    color: #081f5c;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.servicio-card p {
+    color: #666;
+}
+
+/* Sección producto estrella */
+.producto-estrella {
+    background-color: #f0fdff;
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.feature-card {
+    background-color: #d0e3ff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* Sección contacto */
+.redes-sociales {
+    background-color: #fff9f0;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.red-social-card {
+    background-color: #bad6eb;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 100%;
+    cursor: pointer;
+}
+
+.red-social-card:hover {
+    transform: translateY(-5px);
+    background-color: #7096d1;
+    color: white;
+}
+
+.red-social-card h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Utilidades */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #081f5c;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #334eac;
+}
+.h3_texto-degradado {
+  /* Definimos el degradado con tus colores */
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #fcaf45
+  );
+
+  /* Recortamos el fondo al texto */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Hacemos el color del texto transparente para que se vea el fondo */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  /* Opcional: Ajustes de fuente para que luzca mejor */
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .eslogan-content h1 {
+        font-size: 2rem;
+    }
+    
+    .eslogan-content p {
+        font-size: 1rem;
+    }
+    
+    .eslogan-section {
+        height: 50vh;
+        min-height: 400px;
+    }
+    
+    .quienes-card {
+        margin-bottom: 20px;
+    }
+    
+    .servicio-card {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanCIO - Transformación Financiera</title>
+    <link href="/FinanCIO/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/FinanCIO/assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Sección 1: Eslogan -->
+    <section id="eslogan" class="eslogan-section py-6">
+        <div class="eslogan-overlay"></div>
+        <div class="eslogan-content">
+            <h1>FinanCIO</h1>
+            <p>Transformando la gestión financiera con tecnología inteligente</p>
+        </div>
+    </section>
+
+    <!-- Sección 2: Quiénes Somos -->
+    <section id="quienes-somos" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Quiénes Somos</h2>
+
+            <!-- Divs intercalados -->
+            <div class="row mb-5">
+                <div class="col-md-4 mb-4">
+                    <div class="quienes-card">
+                        <h3>FinanCIO</h3>
+                        <p style="text-align: justify;">Somos una empresa de desarrollo de software especializada en
+                            sistemas de gestión
+                            administrativa y financiera que surge como respuesta a la falta de herramientas digitales
+                            eficientes en el mercado.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="quienes-card">
+                        <h3>Visión</h3>
+                        <p style="text-align: justify;">Consolidarse como empresa líder en el desarrollo de soluciones
+                            digitales para la gestión
+                            financiera, destacándose por su innovación, fiabilidad y enfoque en el usuario.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="quienes-card">
+                        <h3>Misión</h3>
+                        <p style="text-align: justify;">Ofrecer soluciones tecnológicas centradas en la gestión
+                            financiera que permiten a
+                            particulares y organizaciones registrar, analizar y gestionar sus recursos económicos de
+                            forma eficiente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video promocional -->
+            <div class="video-container">
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/_JTccyme99U?si=9PIBJdTX6k5RNw2m&amp;controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: Servicios -->
+    <section id="servicios" class="py-5" style="background-color: #bad6eb;">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="servicio-card">
+                        <div class="servicio-icon">💻</div>
+                        <h4>Software a Medida</h4>
+                        <p>Desarrollamos soluciones personalizadas adaptadas a las necesidades específicas de tu
+                            negocio.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="servicio-card">
+                        <div class="servicio-icon">📱</div>
+                        <h4>Aplicaciones Móviles</h4>
+                        <p>Aplicaciones nativas y multiplataforma para gestionar tus finanzas desde cualquier lugar.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="servicio-card">
+                        <div class="servicio-icon">☁️</div>
+                        <h4>Sistemas en la Nube</h4>
+                        <p>Plataformas cloud para acceder a tu información financiera en tiempo real y de forma segura.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="servicio-card">
+                        <div class="servicio-icon">🤖</div>
+                        <h4>Automatización de Procesos</h4>
+                        <p>Automatiza tareas repetitivas y optimiza tu flujo de trabajo con inteligencia artificial.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="servicio-card">
+                        <div class="servicio-icon">📊</div>
+                        <h4>Dashboard Financiero</h4>
+                        <p>Visualiza tus indicadores clave con paneles interactivos y reportes personalizados.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="servicio-card">
+                        <div class="servicio-icon">🔒</div>
+                        <h4>Seguridad y Cumplimiento</h4>
+                        <p>Garantizamos la protección de tus datos y cumplimiento con normativas financieras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="/FinanCIO/assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Cargar navbar y footer
+        fetch('./components/nav-bar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando navbar:', error));
+
+        fetch('./components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando footer:', error));
+    </script>
+</body>
+
+</html>
