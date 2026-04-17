@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinanCIO - Productos</title>
-    <link href="/FinanCIO/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/FinanCIO/assets/css/styles.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
     <style>
         /* Estilos adicionales para la página de productos */
         .app-screenshot {
@@ -261,17 +261,17 @@
     <!-- Footer -->
     <div id="footer-placeholder"></div>
 
-    <script src="/FinanCIO/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script>
         // Cargar navbar y footer
-        fetch('/FinanCIO/components/nav-bar.html')
+        fetch('../components/nav-bar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('nav-placeholder').innerHTML = data;
             })
             .catch(error => console.error('Error cargando navbar:', error));
 
-        fetch('/FinanCIO/components/footer.html')
+        fetch('../components/footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footer-placeholder').innerHTML = data;
